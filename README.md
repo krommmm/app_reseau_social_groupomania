@@ -1,5 +1,7 @@
   #  <img style="width: 200px;" src="./src/images/icon-above-font.png" alt="Game Workshop Logo">
 
+<img style="width: 200px;" src="./src/images/groupo_0.png" alt="Game Workshop Logo">
+<img style="width: 200px;" src="./src/images/groupo_1.png" alt="Game Workshop Logo">
 
 ## Application d'un réseau social (formation Openclassrooms)
 
