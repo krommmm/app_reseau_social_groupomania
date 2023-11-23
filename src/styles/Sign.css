@@ -1,0 +1,273 @@
+.connexion-form {
+	height: 800px;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-direction: center;
+	height: 100%;
+	width: 100%;
+}
+
+.form-container ul {
+	margin-right: 2.5%;
+}
+
+#register {
+	background-color: #fd2d01;
+	margin-right: 2%;
+	color: white;
+	border: 1px solid black;
+	width: 200px;
+    cursor:pointer;
+}
+
+#login {
+	background-color: grey;
+	margin-right: 2%;
+	color: white;
+	border: 1px solid black;
+	width: 200px;
+    cursor: pointer;
+}
+
+/*signup*/
+.form-container li {
+	display: flex;
+	justify-content: center;
+	color: #fd2d01;
+	padding: 2%;
+	font-size: 24px;
+	font-weight: 1000;
+}
+
+/* Login*/
+.password-error,
+.email-error,
+.maj-error,
+.min-error,
+.nb-error,
+.charSpecial-error,
+.noSpace-error {
+	color: red;
+	display: none;
+	max-width: 200px;
+	margin-bottom: 10px;
+}
+
+/*Div qui entoure les div d'erreurs*/
+.errors {
+	display: flex;
+	flex-direction: column;
+}
+.errors div {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Signup*/
+.sign-container {
+	background-color: white;
+	opacity: 1;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 400px;
+	height: 600px;
+}
+
+.email-error,
+.password-error,
+.prénom-error,
+.nom-error {
+	color: red;
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+	color: red;
+	display: none;
+	margin-bottom: 10px;
+}
+
+.answer-input {
+	color: red;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid red;
+	display: none;
+}
+
+.email-error,
+.password-error,
+.name-error,
+.firstName-error {
+	color: red;
+	display: none;
+}
+
+.submit {
+	margin-bottom: 10%;
+}
+
+input {
+	margin-top: 1%;
+	font-size: 17px;
+	color: black;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: white;
+}
+body .submit{
+    border: none;
+}
+#email, #password, #prénom, #nom{
+    color: black;
+}
+
+#email:focus,
+#password:focus,
+#prénom:focus,
+#nom:focus {
+}
+
+#sign-up-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#sign-in-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sign-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    border: 1px solid black;
+}
+
+.input-things {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	margin-bottom: 15px;
+}
+
+.sign-container h1 {
+	font-size: 20px;
+	color: white;
+
+	display: flex;
+	justify-content: center;
+	margin-left: 0%;
+}
+
+.sign-container label {
+	color: white;
+	width: 180px;
+}
+
+/*---------------------------------------Version tablette--------------------------------------------------------------*/
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+	.form-container ul {
+		margin-right: 3%;
+	}
+
+	.sign-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+
+/*---------------------------------------Version mobile--------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+	/*S'inscrire Se connecter*/
+
+	#register {
+		background-color: #fd2d01;
+		opacity: 1;
+		margin-right: 2%;
+		color: white;
+		border: 1px solid black;
+		width: 100px;
+	}
+
+	#login {
+		background-color: grey;
+		opacity: 1;
+		margin-right: 2%;
+		color: white;
+		border: 1px solid black;
+		width: 165px
+	}
+
+	.form-container li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fd2d01;
+		padding: 4%;
+		font-size: 20px;
+		font-weight: 1000;
+	}
+
+	.sign-container {
+		width:90%;
+	}
+
+	.sign-container p {
+		font-size: 30px;
+		color: white;
+		max-width: 400px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 0%;
+	}
+
+	.sign-container label {
+		color: white;
+		font-size: 20px;
+	}
+
+	.submit {
+		margin-bottom: 10%;
+	}
+
+	input {
+		font-size: 20px;
+	}
+
+	.submit {
+		background-color: #fd2d01;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 200px;
+		color: white;
+		font-size: 20px;
+	}
+
+	.sign-container label {
+		color: white;
+		width: 210px;
+	}
+}
