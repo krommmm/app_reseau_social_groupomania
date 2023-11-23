@@ -15,6 +15,15 @@
 
 ### Créer un compte sur la BBD mongodDB
 
+### Variables d'environnement: (créer un fichier .env à la racine et utiliser les clés suivantes )
+> le srv est à récupérer sur mongodb : ex: mongodb+srv://monPseudo:MonPassword@MonCluster.ie5xyeq.mongodb.net/?retryWrites=true&w=majority
+
+PORT = "2000" <br>
+MDB_USER = "identifiant"<br>
+MDB_PASSWORD = "password" <br>
+CLUSTER = "cluster"<br>
+JWT_SECRET = "chaine de char/int aléatoire"<br>
+
 ### Installer les dépendances :
 `npm i` 
 
@@ -24,18 +33,7 @@
 ### Démmarer l'application:
  `npm run start`
 
-### Mettre à jour le srv et le cluster sur mongoDB : 
-> Et le remplacer dans app.js
-
-
-### Variables d'environnement: (créer un fichier .env à la racine et utiliser les clés suivantes )
-> le srv est à récupérer sur mongodb : ex: mongodb+srv://monPseudo:MonPassword@MonCluster.ie5xyeq.mongodb.net/?retryWrites=true&w=majority
 
 
 
-PORT = "2000" <br>
-MDB_USER = "identifiant"<br>
-MDB_PASSWORD = "password" <br>
-CLUSTER = "cluster"<br>
-JWT_SECRET = "chaine de char/int aléatoire"<br>
 
