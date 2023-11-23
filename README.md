@@ -29,15 +29,13 @@
 
 
 ### Variables d'environnement: (créer un fichier .env à la racine et utiliser les clés suivantes )
-   PORT =  "NumeroDePortDuServeur" (doit correspondre avec celui du frontend => path: "./src/components/varGlobal.js") <br>
+> le srv est à récupérer sur mongodb : ex: mongodb+srv://monPseudo:MonPassword@MonCluster.ie5xyeq.mongodb.net/?retryWrites=true&w=majority
 
-  <br>
-   MDB_USER = "NomUtilisateurMongoDB"<br>
-   MDB_PASSWORD = "MdpMongoDB"
-   
-  > Identifiants pour le srv de mongodb, à récupérer sur "mongodb.com"
-      <br><br>
 
- JWT_SECRET = "mettreUnToken" 
-   > Chaine de char aléatoire pour créer un token 
+
+PORT = "2000" <br>
+MDB_USER = "identifiant"<br>
+MDB_PASSWORD = "password" <br>
+CLUSTER = "cluster"<br>
+JWT_SECRET = "chaine de char/int aléatoire"<br>
 

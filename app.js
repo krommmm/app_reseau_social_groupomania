@@ -18,7 +18,7 @@ const db = {
 //Connexion à la base de données avec mongoose
 mongoose
 	.connect(
-		`mongodb+srv://${db.user}:${db.password}@cluster0.ie5xyeq.mongodb.net/?retryWrites=true&w=majority`,
+		`mongodb+srv://${db.user}:${db.password}@${process.env.CLUSTER}.ie5xyeq.mongodb.net/?retryWrites=true&w=majority`,
 		{ useNewUrlParser: true, useUnifiedTopology: true }
 	)
 	.then(() => console.log('Connexion à MongoDB réussie !'))
