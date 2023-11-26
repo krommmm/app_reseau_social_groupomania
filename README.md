@@ -13,6 +13,11 @@
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
+## Description:
+Serveur node.js, Api RESTful pour connexion sécurisée des utilisateurs crud content.<br>
+Front react boostraped create-react-app.<br>
+Un utilisateur créer un identifiant, se connecte, poste(texte/images), commente, like.
+
 ### Installer NodeJs
 
 ### Créer un compte sur la BBD mongodDB
