@@ -37,7 +37,7 @@ JWT_SECRET = "chaine de char/int aléatoire"<br>
 ### Lancer le backend: 
 `nodemon server`
 
-### Démmarer l'application:
+### Démarer l'application:
  `npm run start`
 
 
