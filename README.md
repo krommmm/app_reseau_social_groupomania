@@ -15,7 +15,7 @@
 
 ## Description:
 Serveur node.js, Api RESTful pour connexion sécurisée des utilisateurs crud content.<br>
-Front react boostraped create-react-app.<br>
+Front react bootstrapped create-react-app.<br>
 Un utilisateur créer un identifiant, se connecte, poste(texte/images), commente, like.
 
 ### Installer NodeJs
