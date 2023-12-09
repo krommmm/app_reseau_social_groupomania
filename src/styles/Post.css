@@ -274,7 +274,7 @@ textarea::placeholder {
 .images {
 	width: 95%;
 	max-height: 400px;
-	object-fit: cover;
+	object-fit: contain;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }

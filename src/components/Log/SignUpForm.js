@@ -136,13 +136,13 @@ const SignUpForm = () => {
   
   function regexPassword(e) {
     setPassword(e.target.value);
-    let testPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{12,}$/;
+    let testPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/;
     let testMajuscule= /[A-Z]/;
     let testNoSpace = /(?=.*[\s])/gi;
     let testMinuscule = /[a-z]/;
     let testChiffre = /[0-9]/;
     let testCharSpecial = /[\^>$*<%+=@!,;:?.]/;
-    let test12Char = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=^.{12,}$)/;
+    let test12Char = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=^.{6,}$)/;
     // /(?=.*[\^>$*<%+=@!,;:?.])(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[\s])(?=.{12,})/gi;
     //Si problème avec espace (?!.*[\s]);
 
@@ -257,7 +257,7 @@ const SignUpForm = () => {
             onChange={(e) => regexPassword(e)}
           />
           <div className="errors">
-          <div className="password-error">minimum: 12 caractères  {/*(hors charactères spéciaux)*/}</div>
+          <div className="password-error">minimum: 6 caractères  {/*(hors charactères spéciaux)*/}</div>
             <div className="maj-error">1 majuscule</div>
             <div className="min-error"><br/>1 minuscule</div>
             <div className="nb-error">1 chiffre</div>

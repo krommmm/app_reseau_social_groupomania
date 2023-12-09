@@ -103,7 +103,7 @@ const SignInForm = () => {
     let testMinuscule = /[a-z]/;
     let testChiffre = /[0-9]/;
     let testCharSpecial = /[\^>$*<%+=@!,;:?.]/;
-    let test12Char = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=^.{12,}$)/;
+    let test12Char = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=^.{6,}$)/;
     //Si problème avec espace /[\S]/ ou \S
 
     if (testMajuscule.test(e.target.value) || e.target.value == "") {
@@ -180,7 +180,7 @@ const SignInForm = () => {
               onChange={(e) => regexPassword(e)}
             />
              <div className="errors">
-          <div className="password-error">minimum: 12 caractères  {/*(hors charactères spéciaux)*/}</div>
+          <div className="password-error">minimum: 6 caractères  {/*(hors charactères spéciaux)*/}</div>
             <div className="maj-error">1 majuscule</div>
             <div className="min-error"><br/>1 minuscule</div>
             <div className="nb-error">1 chiffre</div>
