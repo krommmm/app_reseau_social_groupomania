@@ -47,3 +47,22 @@ server.on("listening", () => {
 });
 
 server.listen(port);
+
+/*
+const https = require('https');
+const fs = require('fs');
+const app = require('./app');
+
+const options = {
+  key: fs.readFileSync('/etc/letsencrypt/live/cuisinefamille.net/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/cuisinefamille.net/cert.pem')
+};
+
+
+
+const server = https.createServer(options, app); 
+server.listen(3000, () => {  
+ console.log('Server listening on port 3000');  
+  });
+   
+*/

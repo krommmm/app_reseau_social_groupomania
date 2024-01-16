@@ -1,6 +1,6 @@
 
+const portBack = 2000;
 
 
-//Variable global qui permet de rajouter le port (car dans la bdd il n'y a que le nom de l'image)
-const varGlobal = `http://localhost:2000`;
+const varGlobal = `http://localhost:${portBack}`;
 export default varGlobal;
